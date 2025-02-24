@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function Profile({ isOpen, onClose, title, children }) {
+function Profile({ isOpen, onClose, title, children, originX, originY }) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -14,9 +14,23 @@ function Profile({ isOpen, onClose, title, children }) {
 
   if (!isOpen) return null;
 
+  // Calculate the transform origin based on click position
+  const transformOrigin = `${originX}px ${originY}px`;
+
   return (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg max-w-3xl w-full max-h-[95vh] relative">
+    <div 
+      className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
+      style={{
+        animation: 'fadeIn 0.2s ease-out'
+      }}
+    >
+      <div 
+        className="bg-white rounded-lg max-w-3xl w-full max-h-[95vh] relative"
+        style={{
+          transformOrigin,
+          animation: 'scaleIn 0.3s ease-out'
+        }}
+      >
         {/* Close button */}
         <button 
           onClick={onClose}
@@ -39,6 +53,24 @@ function Profile({ isOpen, onClose, title, children }) {
           {children}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes scaleIn {
+          from {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      `}</style>
     </div>
   );
 }
