@@ -1,17 +1,25 @@
 import { Link } from "react-router-dom";
+import skyline from '../assets/SF-skyline.png'
 
 function Landing(){
 
     return(
     <div class = "flex flex-col items-center justify-center h-screen">
-        <h1 className="text-3xl font-bold">
+        <div className="text-5xl font-cursive">
         Looking To The Horizon
-        </h1>
-        <p className="text-lg mt-10">
-        Clouds of worry, glimmers of hope in downtown San Francisco
+        </div>
+        <p className="text-m mt-10">
+          by <a className="hover:text-blue-500" target="_blank" href="https://jerryzhou11.github.io/portfolio/#/">Jerry Zhou</a>,&nbsp;
+          <a className="hover:text-blue-500" target="_blank"href="">Rachel Smith</a>, and&nbsp;
+          <a className="hover:text-blue-500" target="_blank"href="">Maria Jose Arango </a> 
         </p>
+        <p className="text-xl mt-10">
+        From a street vendor to restaurant owner, San Franciscans share thoughts about the future. 
+        </p>
+        <img src={skyline} alt="San Francisco skyline" className="py-10 ">
+        </img>
         <Link to="">
-          <div className="mt-10 transition duration-300 w-48 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <div className="transition duration-300 w-48 bg-yellow-300 hover:bg-yellow-500 font-bold py-2 px-4 rounded">
             Start Reading
           </div>
         </Link>
