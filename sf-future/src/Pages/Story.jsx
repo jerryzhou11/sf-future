@@ -140,7 +140,7 @@ function Story() {
         </p>
       </Scrolly>
 
-      <Scrolly backgroundImage={graph}>
+      <Scrolly backgroundImage="https://placehold.co/600x400">
         <p className="text-2xl text-center">
           The report attributes this steep decline to instability in the technology 
           and information industries. 
