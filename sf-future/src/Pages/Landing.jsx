@@ -18,7 +18,7 @@ function Landing(){
         </p>
         <img src={skyline} alt="San Francisco skyline" className="py-10 ">
         </img>
-        <Link to="">
+        <Link to="/story">
           <div className="transition duration-300 w-48 bg-yellow-300 hover:bg-yellow-500 font-bold py-2 px-4 rounded">
             Start Reading
           </div>
