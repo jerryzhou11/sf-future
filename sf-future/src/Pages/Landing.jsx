@@ -9,9 +9,9 @@ function Landing(){
         Looking To The Horizon
         </div>
         <p className="text-m mt-10">
-          by <a className="hover:text-blue-500" target="_blank" href="https://jerryzhou11.github.io/portfolio/#/">Jerry Zhou</a>,&nbsp;
-          <a className="hover:text-blue-500" target="_blank"href="">Rachel Smith</a>, and&nbsp;
-          <a className="hover:text-blue-500" target="_blank"href="">Maria Jose Arango </a> 
+          by <a className="underline hover:text-blue-500" target="_blank" href="https://jerryzhou11.github.io/portfolio/#/">Jerry Zhou</a>,&nbsp;
+          <a className="underline hover:text-blue-500" target="_blank"href="">Rachel Smith</a>, and&nbsp;
+          <a className="underline hover:text-blue-500" target="_blank"href="">Maria Jose Arango </a> 
         </p>
         <p className="text-xl mt-10">
         From a street vendor to restaurant owner, San Franciscans share thoughts about the future. 
