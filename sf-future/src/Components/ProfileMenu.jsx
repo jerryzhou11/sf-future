@@ -11,7 +11,7 @@ function ProfileMenu({ onProfileClick }) {
   return (
     <div className="flex justify-center py-16">
       <div className="bg-[url('./assets/SF-skyline.png')] bg-center bg-cover overflow-visible">
-        <div className="flex md:gap-8 px-16 py-4 justify-center items-center">
+        <div className="flex md:gap-8 py-4 justify-center items-center">
           <button 
             onClick={(e) => handleClick(0, e)}
             className="p-3 hover:brightness-130 transition-colors"
