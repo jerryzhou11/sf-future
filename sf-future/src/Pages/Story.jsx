@@ -19,8 +19,9 @@ function Story() {
     {
       title: "Analuisa Casimir",
       content: (
-        <div className="space-y-4 text-left">
+        <div className="space-y-4 text-left flex">
           <img src={Ana} alt="Analuisa Casimir" className="w-full rounded-lg" />
+          <div className="flex flex-col gap-8">
           <p className="text-lg">
            Peruvian mom and San Francisco street vendor Analuisa Casimir worries about her and her daughter's future. "San Francisco is expensive, [and] everything costs a lot," said Casimir. 
           </p>
@@ -40,11 +41,13 @@ function Story() {
           On Sept. 17, 2018, the Department of Economic Opportunity reported that former Governor Jerry Brown signed the <a className="underline hover:text-blue-500" target="_blank" href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180SB946">Safe Sidewalk Vending Act</a>, which decriminalized sidewalk vending in the state and permitted local authorities to implement non-criminal laws to protect public health, safety and welfare. 
           </p>
           <p className="text-lg">
-            It is unclear as to why Casimir continuously gets tickets and is told to leave.  
+          It is unclear as to why Casimir continuously gets tickets and is told to leave.
+          
           </p>
           <p className="text-lg">
-           “Now that Trump's here, all we ask is to help immigrants,” Casimir said. “The only thing we come here [for] is to work.” 
+          “Now that Trump's here, all we ask is to help immigrants,” Casimir said. “The only thing we come here [for] is to work.” 
           </p>
+          </div>
         </div>
       )
     },
@@ -128,13 +131,10 @@ function Story() {
   ];
 
   return (
-    <div className="w-full">
-      <Scrolly>
-        <p className="text-3xl text-center">San Francisco is in a tough spot.</p>
-      </Scrolly>
-
+    <div className="w-full animate-[fade-in_5s_ease-in-out]">
       <Scrolly backgroundImage={graph}>
-        <p className="text-2xl text-center">
+        <p className="text-2xl text-center">San Francisco is in a tough spot.</p>
+        <p className="text-2xl text-center mt-5">
           According to a recent Milken Institute report, the San Francisco area has experienced 
           the largest plummet in economic ratings across all large metropolitan areas.
         </p>

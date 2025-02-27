@@ -2,7 +2,7 @@ import React from 'react';
 
 function Scrolly({ children, backgroundImage }) {
   return (
-    <section className="min-h-screen relative flex items-center justify-center snap-proximity">
+    <section className="h-[100vh] relative flex items-center justify-center snap-proximity">
       {backgroundImage && (
         <div className="absolute inset-0 flex items-center justify-center">
           <img 

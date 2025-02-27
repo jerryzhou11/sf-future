@@ -25,7 +25,7 @@ function Profile({ isOpen, onClose, title, children, originX, originY }) {
       }}
     >
       <div 
-        className="bg-white rounded-lg max-w-3xl w-full max-h-[95vh] relative"
+        className="bg-white rounded-lg w-full h-full relative"
         style={{
           transformOrigin,
           animation: 'scaleIn 0.3s ease-out'
@@ -44,7 +44,7 @@ function Profile({ isOpen, onClose, title, children, originX, originY }) {
         </button>
         
         {/* Header */}
-        <div className="p-6 border-b">
+        <div className="p-6 border-b bg-amber-300">
           <h2 className="text-2xl font-bold pr-8">{title}</h2>
         </div>
         
