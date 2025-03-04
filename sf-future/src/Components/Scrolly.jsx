@@ -13,7 +13,7 @@ function Scrolly({ children, backgroundImage }) {
           />
         </div>
       )}
-      <div className="relative z-10 max-w-2xl mx-auto px-4">
+      <div className="relative z-10 max-w-2xl md:max-w-4xl mx-auto px-4">
         <div className={backgroundImage ? "bg-white/40 rounded-lg p-6" : ""}>
           {children}
         </div>

@@ -161,7 +161,7 @@ function Story() {
 
       <Scrolly>
         <div className="space-y-12">
-          <p className="text-2xl text-center">Explore their stories here.</p>
+          <p className="text-2xl text-center">Select a dish to learn about the person behind it.</p>
           <ProfileMenu onProfileClick={handleProfileClick} />
         </div>
       </Scrolly>
