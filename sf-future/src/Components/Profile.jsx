@@ -45,7 +45,7 @@ function Profile({ isOpen, onClose, title, children, originX, originY }) {
         
         {/* Header */}
         <div className="p-6 border-b bg-amber-300">
-          <h2 className="text-2xl font-bold pr-8">{title}</h2>
+          <h2 className="text-2xl font-cursive pr-8">{title}</h2>
         </div>
         
         {/* Content */}

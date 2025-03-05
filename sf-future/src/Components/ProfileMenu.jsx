@@ -31,7 +31,7 @@ function ProfileMenu({ onProfileClick }) {
         <div className="md:w-2xl md:h-[30vh] md:mt-30">
           <button
             onClick={(e) => handleClick(1, e)}
-            className="p-7 hover:brightness-130 hover:scale-110 transition-colors"
+            className="p-7 hover:brightness-130 hover:scale-110 transition-all"
             aria-label="Read Jess's Story"
           >
             Jess
@@ -44,7 +44,7 @@ function ProfileMenu({ onProfileClick }) {
           </button>
           <button
             onClick={(e) => handleClick(2, e)}
-            className="p-7 hover:brightness-130 hover:scale-110 transition-colors"
+            className="p-7 hover:brightness-130 hover:scale-110 transition-all"
             aria-label="Read Lei's Story"
           >
             Lei
@@ -56,7 +56,7 @@ function ProfileMenu({ onProfileClick }) {
           </button>
           <button
             onClick={(e) => handleClick(0, e)}
-            className="p-7 hover:brightness-130 hover:scale-110 transition-colors"
+            className="p-7 hover:brightness-130 hover:scale-110 transition-all"
             aria-label="Read Annaluisa's Story"
           >
             Ana

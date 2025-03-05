@@ -19,7 +19,7 @@ function Story() {
     {
       title: "Analuisa Casimir",
       content: (
-        <div className="space-y-4 text-left flex">
+        <div className="space-y-4 text-left lg:flex gap-4">
           <img src={Ana} alt="Analuisa Casimir" className="w-full rounded-lg" />
           <div className="flex flex-col gap-8">
           <p className="text-lg">
