@@ -8,7 +8,7 @@ function Scrolly({ children, backgroundImage }) {
             <img 
               src={backgroundImage}
               alt="Background visualization" 
-              className="w-fit-content h-screen object-cover"
+              className="w- h-screen object-cover"
             />
           </div>
       </figure>}

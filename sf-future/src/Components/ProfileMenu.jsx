@@ -28,7 +28,7 @@ function ProfileMenu({ onProfileClick }) {
     <div>
       <img src={table} className="absolute mt-20 -z-5 opacity-0 md:opacity-100" />
       <div className="flex justify-center">
-        <div className="md:w-2xl md:h-[30vh] md:mt-10">
+        <div className="md:w-2xl md:h-[30vh] md:mt-10 font-cursive text-2xl">
           <button
             onClick={(e) => handleClick(1, e)}
             className="p-7 hover:brightness-130 hover:scale-110 transition-all"

@@ -135,27 +135,31 @@ function Story() {
   return (
     <div className="overscroll-none">
       <Scrolly backgroundImage={graph}>
-      <div className="h-[100vh]">
-
-        <p className=" text-2xl text-center">San Francisco is in a tough spot.</p>
-        <p className="text-2xl text-center mt-5">
-          According to a recent Milken Institute report, the San Francisco area has experienced 
-          the largest plummet in economic ratings across all large metropolitan areas.
-        </p>
+      <div className="h-[100vh] -mt-120 bg">
+        <div className="bg-amber-300 rounded-2xl p-2">
+          <p className=" text-2xl text-center">San Francisco is in a tough spot.</p>
+          <p className="text-2xl text-center mt-5">
+            According to a recent Milken Institute report, the San Francisco area has experienced 
+            the largest plummet in economic ratings across all large metropolitan areas.
+          </p>
+        </div>
       </div>
       </Scrolly>
 
       <Scrolly backgroundImage="https://placehold.co/600x400">
-        <div className="h-[100vh]">
-          <p className="text-2xl text-center">
+        <div className="h-[100vh] -mt-120">
+        <div className="bg-amber-300 rounded-2xl p-2">
+
+          <p className="text-2xl">
             The report attributes this steep decline to instability in the technology 
             and information industries. 
           </p>
           <p> &nbsp; </p>
-          <p className="text-2xl text-center">
+          <p className="text-2xl">
             San Francisco also fell in terms of job growth 
             and wage growth rankings.
           </p>
+        </div>
         </div>
       </Scrolly>
 
