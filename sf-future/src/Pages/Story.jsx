@@ -4,6 +4,7 @@ import Scrolly from '../Components/Scrolly';
 import Profile from '../Components/Profile';
 import Ana from '../assets/Ana.png';
 import Lei from '../assets/Lei.png';
+import Jess from '../assets/Jess.png';
 import ProfileMenu from '../Components/ProfileMenu';
 
 function Story() {
@@ -20,7 +21,7 @@ function Story() {
       title: "Analuisa Casimir",
       content: (
         <div className="space-y-4 text-left lg:flex gap-4">
-          <img src={Ana} alt="Analuisa Casimir" className="w-full rounded-lg" />
+          <img src={Ana} alt="Analuisa Casimir" className="lg:rounded-lg h-fit" />
           <div className="flex flex-col gap-8">
           <p className="text-lg">
            Peruvian mom and San Francisco street vendor Analuisa Casimir worries about her and her daughter's future. "San Francisco is expensive, [and] everything costs a lot," said Casimir. 
@@ -54,8 +55,9 @@ function Story() {
     {
       title: "Jess Kitchingman",
       content: (
-        <div className="space-y-4 text-left">
-          <img src="https://placehold.co/600x400" alt="Michael Torres" className="w-full rounded-lg" />
+        <div className="space-y-4 text-left lg:flex gap-4">
+          <img src={Jess} alt="Michael Torres" className="lg:sticky top-0 rounded-lg h-fit" />
+          <div className="flex flex-col gap-8">
           <p className="text-lg">
           Jess Kitchingman lives in the Tenderloin, known for being one of the most dangerous neighborhoods in San Francisco. She has been struggling economically and is currently working two barista jobs. 
           </p>
@@ -81,17 +83,16 @@ function Story() {
           <p className="text-lg">
           She shared that recently a multi-unit housing was built or approved to be built on Divisadero, and so she looks forward towards more affordable housing and more housing for more people.
           </p>
+          </div>
         </div>
       )
     },
     {
       title: "Lei Levy",
       content: (
-        <div className="space-y-4 text-left">
-          <img src={Lei} alt="Lei Levy" className="w-full rounded-lg" />
-          <p className="text-lg">
-            
-          </p>
+        <div className="space-y-4 text-left lg:flex gap-4">
+          <img src={Lei} alt="Lei Levy" className="lg:sticky top-0 rounded-lg h-fit" />
+          <div className="flex flex-col gap-8">
           <p className="text-lg">
             “I mean, to be honest, our priorities are, let's hope we can stay open in the next five years,” said Lei Levy from Pier 23 Cafe Restaurant and Bar. 
           </p>
@@ -125,43 +126,42 @@ function Story() {
           <p className="text-lg">
           “A lot of people that you might encounter would admit that San Francisco was really suffering from a lot of things happening, and it feels like there's, there's glimmers of hope and light that we're seeing that hopefully actually manifest,” Levy said. “[There are] people who really believe in this place.”
           </p>
+          </div>
         </div>
       )
     }
   ];
 
   return (
-    <div className="w-full animate-[fade-in_5s_ease-in-out]">
+    <div className="overscroll-none">
       <Scrolly backgroundImage={graph}>
-        <p className="text-2xl text-center">San Francisco is in a tough spot.</p>
+      <div className="h-[100vh]">
+
+        <p className=" text-2xl text-center">San Francisco is in a tough spot.</p>
         <p className="text-2xl text-center mt-5">
           According to a recent Milken Institute report, the San Francisco area has experienced 
           the largest plummet in economic ratings across all large metropolitan areas.
         </p>
+      </div>
       </Scrolly>
 
       <Scrolly backgroundImage="https://placehold.co/600x400">
-        <p className="text-2xl text-center">
-          The report attributes this steep decline to instability in the technology 
-          and information industries. 
-        </p>
-        <p> &nbsp; </p>
-        <p className="text-2xl text-center">
-          San Francisco also fell in terms of job growth 
-          and wage growth rankings.
-        </p>
+        <div className="h-[100vh]">
+          <p className="text-2xl text-center">
+            The report attributes this steep decline to instability in the technology 
+            and information industries. 
+          </p>
+          <p> &nbsp; </p>
+          <p className="text-2xl text-center">
+            San Francisco also fell in terms of job growth 
+            and wage growth rankings.
+          </p>
+        </div>
       </Scrolly>
 
       <Scrolly>
-        <p className="text-2xl text-center">
-          But behind these worrying numbers are people: San Franciscans that have 
-          been deeply impacted by these economic changes.
-        </p>
-      </Scrolly>
-
-      <Scrolly>
-        <div className="space-y-12">
-          <p className="text-2xl text-center">Select a dish to learn about the person behind it.</p>
+        <div className="flex-col">
+          <p className="mt-20 text-2xl text-center">Select a dish to learn about the person behind it.</p>
           <ProfileMenu onProfileClick={handleProfileClick} />
         </div>
       </Scrolly>

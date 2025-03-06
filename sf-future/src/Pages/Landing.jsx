@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import skyline from '../assets/SF-skyline.png'
 
+
 function Landing(){
 
     return(
-    <div class = "flex flex-col items-center justify-center h-screen">
+    <div class = "flex flex-col items-center justify-center h-fit overscroll-none">
         <div className="text-5xl font-cursive">
         Looking To The Horizon
         </div>
@@ -23,7 +24,7 @@ function Landing(){
             Start Reading
           </div>
         </Link>
-      </div>
+    </div>
     )
 }
 
