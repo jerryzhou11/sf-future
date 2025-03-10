@@ -22,6 +22,7 @@ function Scrolly({ children, backgroundImage, hideImageOnMobile = false}) {
           </div>
         </div>
   );
+  
  }else return (
     <div>
       {backgroundImage && <figure className="sticky top-0">
