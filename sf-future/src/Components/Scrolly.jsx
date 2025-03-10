@@ -11,7 +11,7 @@ function Scrolly({ children, backgroundImage, hideImageOnMobile = false}) {
                 <img 
                   src={backgroundImage}
                   alt="Background visualization" 
-                  className="lg:opacity-100 opacity-0 min-h-screen object-cover -z-10"
+                  className="relative lg:opacity-100 opacity-0 min-h-screen object-cover -z-10"
                 />
               </div>
           </figure>}
