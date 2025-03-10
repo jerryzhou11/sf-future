@@ -22,7 +22,7 @@ function Story() {
     {
       title: "Analuisa Casimir",
       content: (
-        <div className="space-y-4 text-left lg:flex gap-4">
+        <div className="space-y-4 text-left lg:flex gap- justify-start items-start">
           <img src={Ana} alt="Analuisa Casimir" className="lg:rounded-lg h-fit" />
           <div className="flex flex-col gap-8">
           <p className="text-lg text-center font-bold">
@@ -67,7 +67,7 @@ function Story() {
       title: "Jess Kitchingman",
       content: (
         <div className="space-y-4 text-left lg:flex gap-4">
-          <img src={Jess} alt="Michael Torres" className="lg:sticky top-0 rounded-lg h-fit" />
+          <img src={Jess} alt="Jess Kitchingman" className="lg:sticky top-0 rounded-lg h-fit" />
           <div className="flex flex-col gap-8">
           <p className="text-lg">
           Jess Kitchingman regularly commutes from her Tenderloin home to one of her two barista jobs in the Financial District. Straddling what she called “two worlds,” she worries about gentrification and inequality in her city — while feeling pressure herself to keep up with San Francisco’s rising cost of living.
@@ -181,7 +181,7 @@ function Story() {
       </Scrolly>
 
       <Scrolly backgroundImage={covid}>
-      <div className="h-[100vh] bg">
+      <div className="h-[100vh] bg flex-col justify-items items-center">
           <div className="bg-amber-300 rounded-2xl p-2">
             <p className="text-2xl">
               The COVID-19 pandemic brought more challenges, limiting physical gatherings and impacting the restaurant economy, as well as the food and restaurant culture San Francisco is known for. 
