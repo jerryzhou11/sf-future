@@ -181,21 +181,21 @@ function Story() {
       </Scrolly>
 
       <Scrolly backgroundImage={covid}>
-      <div className="h-[100vh] bg flex-col justify-items items-center">
+      <div className="h-[100vh] bg flex-col justify-items items-center transform-gpu [-webkit-transform:translate3d(0,0,1)]">
           <div className="bg-amber-300 rounded-2xl p-2">
             <p className="text-2xl">
               The COVID-19 pandemic brought more challenges, limiting physical gatherings and impacting the restaurant economy, as well as the food and restaurant culture San Francisco is known for. 
             </p>
           </div>
         </div>
-        <div className="h-[100vh]">
+        <div className="h-[100vh] bg transform-gpu [-webkit-transform:translate3d(0,0,1)]">
           <div className="bg-amber-300 rounded-2xl p-2">
             <p className="text-2xl">
               More recently, federal immigration policies have residents and workers worried, as <a className="underline hover:text-blue-500" target="_blank" href="https://vera-institute.files.svdcdn.com/production/downloads/publications/profile-foreign-born-population-san-francisco.pdf"> 31 percent of the S.F. metropolitan area population is made up of immigrants.</a> 
             </p>
           </div>
         </div>
-        <div className="h-[100vh]">
+        <div className="h-[100vh] bg transform-gpu [-webkit-transform:translate3d(0,0,1)]">
           <div className="bg-amber-300 rounded-2xl p-2">
             <p className="text-2xl">
             So, who are the people who build and deliver SF’s rich food culture? How are they faring?
