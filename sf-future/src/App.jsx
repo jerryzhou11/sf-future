@@ -8,6 +8,7 @@ function App() {
 
   return (
     <HashRouter>
+      <div id="background_wrap"></div>
       <Routes>
           <Route path="/" element={<Landing/>}/>
           <Route path="/story" element={<Story/>}/>

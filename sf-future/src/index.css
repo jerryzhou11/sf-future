@@ -13,8 +13,6 @@
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
   background-color: #ffffff;
-  background-image: url('assets/paper.jpg');
-  background-attachment: fixed;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +21,19 @@
 
 }
 
+
+#background_wrap {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url('assets/paper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
 a {
   font-weight: 500;
   transition: color 0.25s;
