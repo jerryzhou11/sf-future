@@ -185,11 +185,11 @@ function Story() {
           <div className="bg-amber-300 rounded-2xl p-2">
             <p className="text-2xl">
               The COVID-19 pandemic brought more challenges, limiting physical gatherings and impacting the restaurant economy, as well as the food and restaurant culture San Francisco is known for. 
-              &nbsp;
             </p>
-            <p className="text-2xl">
-              &nbsp;  
-            </p>
+          </div>
+        </div>
+        <div className="h-[100vh]">
+          <div className="bg-amber-300 rounded-2xl p-2">
             <p className="text-2xl">
               More recently, federal immigration policies have residents and workers worried, as <a className="underline hover:text-blue-500" target="_blank" href="https://vera-institute.files.svdcdn.com/production/downloads/publications/profile-foreign-born-population-san-francisco.pdf"> 31 percent of the S.F. metropolitan area population is made up of immigrants.</a> 
             </p>
