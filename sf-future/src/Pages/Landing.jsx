@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import burrito from '../assets/burrito.jpg';
+import stand from '../assets/stand.png';
 
 function Landing(){
 
@@ -16,8 +16,9 @@ function Landing(){
         <p className="text-xl mt-10">
         Who is behind the diverse food culture of SF?
         </p>
-        <img src={burrito} alt="San Francisco skyline" className="py-10 h-[50vh]">
-        </img>
+        <div className="py-10">
+        <img src={stand} alt="San Francisco skyline" className="h-[50vh] border-2 border-amber-300"/>
+        </div>
         <Link to="/story">
           <div className="transition-all duration-300 w-48 bg-yellow-300 hover:bg-yellow-500 hover:scale-105 font-bold py-2 px-4 rounded">
             Start Reading

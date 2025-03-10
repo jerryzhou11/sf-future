@@ -168,7 +168,7 @@ function Story() {
               The city also boasts the highest ratio of local restaurants to chain restaurants of any U.S. metropolitan area.
             </p>
           </div>
-          <img src={graph} className="lg:hidden py-20"></img>
+          <img src={graph} className="lg:hidden py-20 invert-100 brightness-75"></img>
         </div>
         <div className="h-[100vh] bg">
           <div className="bg-amber-300 rounded-2xl p-2">
