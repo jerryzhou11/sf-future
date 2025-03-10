@@ -23,7 +23,7 @@ function Story() {
       title: "Analuisa Casimir",
       content: (
         <div className="space-y-4 text-left lg:flex gap- justify-start items-start">
-          <img src={Ana} alt="Analuisa Casimir" className="lg:rounded-lg h-fit" />
+          <img src={Ana} alt="Analuisa Casimir" className="lg:rounded-lg object-cover" />
           <div className="flex flex-col gap-8">
           <p className="text-lg text-center font-bold">
             Interview Translated From Spanish
@@ -67,7 +67,7 @@ function Story() {
       title: "Jess Kitchingman",
       content: (
         <div className="space-y-4 text-left lg:flex gap-4">
-          <img src={Jess} alt="Jess Kitchingman" className="lg:sticky top-0 rounded-lg h-fit" />
+          <img src={Jess} alt="Jess Kitchingman" className="lg:sticky top-0 rounded-lg object-cover" />
           <div className="flex flex-col gap-8">
           <p className="text-lg">
           Jess Kitchingman regularly commutes from her Tenderloin home to one of her two barista jobs in the Financial District. Straddling what she called “two worlds,” she worries about gentrification and inequality in her city — while feeling pressure herself to keep up with San Francisco’s rising cost of living.
@@ -108,7 +108,7 @@ function Story() {
       title: "Lei Levy",
       content: (
         <div className="space-y-4 text-left lg:flex gap-4">
-          <img src={Lei} alt="Lei Levy" className="lg:sticky top-0 rounded-lg h-fit" />
+          <img src={Lei} alt="Lei Levy" className="lg:sticky top-0 rounded-lg object-cover" />
           <div className="flex flex-col gap-8">
           <p className="text-lg">
           Lei Levy grew up in North Beach and runs Pier 23, a waterfront cafe and bar on San Francisco’s Embarcadero that her mother started 36 years ago. She has watched the city and its economy transform for decades — especially since the COVID-19 pandemic.
