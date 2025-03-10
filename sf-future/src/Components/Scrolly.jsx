@@ -1,14 +1,35 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-function Scrolly({ children, backgroundImage }) {
+
+function Scrolly({ children, backgroundImage, hideImageOnMobile = false}) {
+
+ if(hideImageOnMobile){
   return (
+    <div>
+          {backgroundImage && <figure className="sticky top-0">
+              <div className="">
+                <img 
+                  src={backgroundImage}
+                  alt="Background visualization" 
+                  className="lg:opacity-100 opacity-0 h-screen object-cover"
+                />
+              </div>
+          </figure>}
+          <div className="relative">
+            <div className="relative z-10 max-w-2xl md:max-w-4xl mx-auto px-4">
+                {children}
+            </div>
+          </div>
+        </div>
+  );
+ }else return (
     <div>
       {backgroundImage && <figure className="sticky top-0">
           <div className="">
             <img 
               src={backgroundImage}
               alt="Background visualization" 
-              className="w- h-screen object-cover"
+              className="h-screen object-cover"
             />
           </div>
       </figure>}
